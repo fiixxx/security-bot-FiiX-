@@ -1579,7 +1579,7 @@ client.on("message", message => {
 
       
 client.on("guildMemberAdd", async member => {
-  let channel = member.guild.channels.cache.find(c => c.name === 'welcome.')
+  let channel = member.guild.channels.cache.find(c => c.name === 'welcome')
   let WELCOME = new Discord.MessageEmbed()
   .setTitle('New User Has Joined!')
   .setDescription(`Welcome To Our Server ${member.user} we are happy to have you! you are member number ${member.guild.memberCount}!`)
