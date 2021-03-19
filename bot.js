@@ -18,10 +18,10 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "f.";
+const prefix = "m/";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("ODA4NjYzMjE2ODI1MDQwOTE3.YCJ0Tw.8Pgfrypy5wsLhsbwZttL-ucWnYU");
+client.login("ODEzNTYyNjQyMzU4NzMwNzYz.YDRHQQ.lluXhoN6YG_vQyLgC4p-E_6k0UI");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
 });
@@ -49,7 +49,7 @@ __Security Commands__
 > ${prefix}anti bot - on/off]
 > ${prefix}setting
 __Info Commands__ 
-> user info , server info , ping , bot info , 
+> user info , server info , 
 > servers , role , channel info , my invites ,
 > badeg , avatar , 
 __Moderation Commands__ 
@@ -1578,51 +1578,3 @@ client.on("message", message => {
 
 
       
-//=================================[ ping ]=================================//
-
-client.on("message", message => {
-  if (message.author.bot) return;
-  if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("pong | :ping_pong: ").then(msg => {
-      var PinG = `${Date.now() - msg.createdTimestamp}`;
-      var ApL = `${Math.round(client.ping)}`;
-      msg.channel.send(`**Time taken: ${PinG} ms.**`);
-   
-});
-
-//=================================[ botinfo ]==============================//
-
-client.on("message", message => {
-  if (message.content.startsWith(`${prefix}bot info`)) {
-    const tnx = new Discord.MessageEmbed()
-      .setAuthor(client.user.username, client.user.avatarURL())
-      .setThumbnail(
-        `https://cdn.discordapp.com/attachments/772758556848029727/802994883378806824/image0.jpg`
-      )
-      .setColor("BLACK")
-      .setTitle(`Info about ${client.user.username}.`)
-      .addField(
-        "**My Ping**",
-        `${Date.now() - message.createdTimestamp}` + "MS",
-        true
-      )
-      .addField(
-        "**Ram Usage**",
-        `${(process.memoryUsage().rss / 1048576).toFixed()}MB`,
-        true
-      )
-      .addField("**Servers**", `[ ${client.guilds.cache.size} ]`, true)
-      .addField("**Channels**", `[ ${client.channels.cache.size} ]`, true)
-      .addField("**Users**", `[ ${client.users.size} ]`, true)
-      .addField("**My Name**", `[ ${client.user.tag} ]`, true)
-      .addField("**My ID**", `[ ${client.user.id} ]`, true)
-      .addField("**DiscordJS**", `[ ${Discord.version} ]`, true)
-      .addField("**NodeJS**", `[ ${process.version} ]`, true)
-      .addField("**Bot-Owners**", `<@596060641740193856>`, true)
-      .addField("**My Prefix**", `[ ${prefix} ]`, true)
-      .addField("**My Language**", `[ Java Script ]`, true)
-      .setFooter("Security");
-
-    message.channel.send(tnx);
-  }
-});
