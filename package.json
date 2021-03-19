@@ -1,0 +1,45 @@
+{
+  "name": "Mr.BAD",
+  "version": "0.0.1",
+  "description": "Mr.BAD",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "dateformat": "^4.5.1",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "gif-search": "^2.1.0",
+    "guild": "^1.2.2",
+    "hh-mm-ss": "^1.2.0",
+    "jimp": "^0.16.1",
+    "embed-js": "^5.0.3",
+    "math-expression-evaluator": "^1.3.7",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "node-cmd": "^4.0.0",
+    "snekfetch": "^4.0.4",
+    "table": "^6.0.7",
+    "events.js": "^0.1.4",
+    "discord.js-commando": "^0.12.1",
+    "discordjs-embed-converter": "^1.2.2",
+    "rich-embed": "^1.1.3",
+    "richer-embed": "^1.0.1",
+    "discord-anti-spam": "^2.4.1",
+    "enmap": "^5.8.3"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
