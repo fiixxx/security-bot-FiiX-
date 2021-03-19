@@ -50,8 +50,8 @@ __Security Commands__
 > ${prefix}setting
 __Info Commands__ 
 > user info , server info , 
-> servers , role , channel info , my invites ,
-> badeg , avatar , 
+> servers , role , channel info 
+> my invites , badeg , avatar , 
 __Moderation Commands__ 
 > lock , unlock , clear , ban , kick
 > unban , mute , unmute , bans
