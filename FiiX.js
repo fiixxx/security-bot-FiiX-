@@ -18,10 +18,10 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "m/";
+const prefix = "f/";
 const cooldown = new Set();
 const cdtime = 7;
-client.login("");
+client.login("تــــۆکــیـــن لــئـرە دانی");
 client.on("ready", () => {
   console.log(`${client.user.tag}`);
 });
@@ -55,6 +55,7 @@ __Info Commands__
 __Moderation Commands__ 
 > lock , unlock , clear , ban , kick
 > unban , mute , unmute , bans
+> Project By FiiX >>>
 __This is a little prefix__
 > [ ${prefix} ]
 `;
@@ -1589,3 +1590,4 @@ client.on("guildMemberAdd", async member => {
   .setFooter('Thanks For Joining!')
   channel.send(WELCOME)
 })
+Code By ᖴ𝗂𝗂᙭#1000
